@@ -5,11 +5,11 @@ def find_min_in_nested_arrays(src)
   
   new_array = []
   row_index = 0 
-  while row_index < src.count do
+  while row_index < src.length do
     element_index = 0
-    while element_index < src[row_index].count do
+    while element_index < src[row_index].length do
       sorted_array = src[row_index].sort
-      new_array << sorted_array[element_index]
+      new_array << sorted_array[0]
       element_index += 1 
     end
   row_index += 1 
